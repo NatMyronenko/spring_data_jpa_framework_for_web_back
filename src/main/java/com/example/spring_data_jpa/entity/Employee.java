@@ -1,11 +1,7 @@
-package com.myronenko.springboot.springboot_rest.entity;
+package com.example.spring_data_jpa.entity;
 
 import jakarta.persistence.*;
-import jdk.jfr.DataAmount;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 @Entity
 @Table(name = "employee")
 public class Employee {
