@@ -1,15 +1,17 @@
-package com.myronenko.springboot.springboot_rest.service;
+package com.example.spring_data_jpa.service;
 
-import com.myronenko.springboot.springboot_rest.entity.Employee;
+import com.example.spring_data_jpa.entity.Employee;
 
 import java.util.List;
 
 public interface EmployeeService {
-    public List<Employee> getAllEmployees();
+     List<Employee> getAllEmployees();
 
-    public void saveEmployee(Employee employee);
+     List<Employee> findAllByName(String name);
 
-    public Employee getEmployee(int id);
+     void saveEmployee(Employee employee);
 
-    public void deleteEmployee(int id);
+     Employee getEmployee(int id);
+
+     void deleteEmployee(int id);
 }
